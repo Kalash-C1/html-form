@@ -6,10 +6,10 @@
 
 @font-face {
     font-family: Norse-Bold;
-    src: local("Norse-Bold.otf");
+    src: url("Norse-Bold.otf");
 }
 
-.container {
+.left-container {
     position: absolute;
     width: 25px;
     height: 50px;
@@ -32,11 +32,10 @@
 }
 
 .logo {
-    position: fixed;
-    left: 0;
+    position: absolute;
+    left: 2vw;
     width: 10vw;
     height: 20vh;
-    top: 25vh;
     z-index: 1;
 }
 
@@ -44,7 +43,138 @@
     position: absolute;
     left: 15vw;
     font-family: Norse-Bold;
+    top: 20%;
     color: white;
-    margin-top: auto;
-    margin-bottom: auto;
+    font-size: 5em;
+}
+
+.footer-container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 33vw;
+    height: 3vh;
+    top: 97vh;
+    bottom: 0vh;
+    z-index: 1;
+}
+
+.img-footer {
+    color: white;
+    text-align: center;
+}
+
+.img-footer :visited {
+    color: red;
+}
+
+.img-footer :focus {
+    color: yellow;
+}
+
+.right-container {
+    position: absolute;
+    background-color: greenyellow;
+    width: 67vw;
+    height: 25vh;
+    right: 0;
+}
+
+#middle {
+    background-color: transparent;
+    height: 50vh;
+    top: 25vh;
+}
+
+#bottom {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
+  }
+  
+.content p {
+    text-align: center;
+}
+
+.heading {
+    margin-top: 3%;
+    margin-left: 14%;
+}
+
+.form {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 66vw;
+    gap: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex: 1 1 45%;
+    flex-direction: column;
+    width: 50%;
+    height: 33%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.btn {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Slightly larger text */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.btn:hover {
+    background-color: greenyellow;
+}
+
+.btn:active {
+    background-color: green;
+}
+
+.btn:focus {
+    outline: none; /* Remove the default outline */
+}
+
+.submit {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
 }

@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>HTML Form</title>
+ </head>
+ <body>
+    <div class="left-container">
+        <div class="logo-container">
+            <img class="logo" src="odin-lined.png" alt="" />
+            <h1 class="logo-text">ODIN</h1>
+        </div>
+        <img class="bg-img" src="html-form.avif" alt="" />
+        <div class="footer-container">
+            <footer class="img-footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on 
+            <a href="https://unsplash.com/">Unsplash</a></footer>
+        </div>
+    </div>
+
+    <div class="right-container" id="top">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eum, officiis nulla obcaecati architecto aut aperiam sit esse mollitia dolor accusamus libero labore eligendi corporis autem sint est enim aliquam!</p>
+        </div>
+    </div>
+    <div class="right-container" id="middle">
+        <h2 class="heading">Let's do this!</h2>
+        <div class="form">
+            <form action="">
+                <div class="form-group">
+                    <label for="first name">First Name</label>
+                    <input type="text" placeholder="Enter your First Name" id="first name" name="first name"/>
+                </div>
+                <div class="form-group">
+                    <label for="last name">Last Name</label>
+                    <input type="text" placeholder="Enter your Last Name" id="last name" name="last name"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" id="email" name="email"/>
+                </div>
+                <div class="form-group">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" maxlength="10" minlength="10" placeholder="Enter your Phone Number" id="phone_number" name="phone_number">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" maxlength="10" minlength="10" placeholder="Enter your Password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" maxlength="10" minlength="10" placeholder="Confirm your Password" id="password" name="confirm_password">
+                </div>
+            </form>
+        </div>
+        <button class="btn submit" type="submit">Create an Account</button>
+    </div>
+    <div class="right-container" id="bottom">
+        <p>Already have an Account:&nbsp;</p>
+        <button class="btn" type="button">Sign In</button>
+    </div>
+ </body>
+ </html>
